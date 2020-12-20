@@ -9,6 +9,9 @@ import ImageMain from './components/ImageMain'
 import Sponsors from './components/Sponsors'
 import Conection from './components/Conection'
 
+import Reward from './components/Reward'
+import Devs from './components/Devs'
+
 function App() {
   return (
     <>
@@ -18,6 +21,8 @@ function App() {
       <ImageMain/>
       <Sponsors/>
       <Conection/>
+      <Reward/>
+      <Devs/>
     </>
   );
 }

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { gray, green, pink } from '../Colors/colors'
 
 export const Container = styled.div`
   width: 100%;
@@ -16,7 +17,7 @@ export const Content = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #e1e1e6;
+  color: ${gray};
   text-align: center;
 
   h1 {
@@ -27,7 +28,7 @@ export const Content = styled.div`
   }
 
   b{
-    color: #04d361;
+    color: ${green};
   }
 
   @media (max-width: 1000px) {
@@ -48,7 +49,7 @@ export const ButtonSection = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #e1e1e6;
+  color: ${gray};
   margin-top: 2rem;
   transition: all .3s ease-in;
 
@@ -81,7 +82,7 @@ export const Button = styled.button`
     transition: all .3s ease-in-out;
 
     &:hover {
-    background-color: #8257a2;
+    background-color: ${pink};
     transform: translateY(-3px);
     }
 `;

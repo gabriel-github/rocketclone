@@ -1,90 +1,99 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import { green, gray, darkGray, purple, purpleDark } from "../Colors/colors";
 
 export const Container = styled.div`
-    width: 100%;
-    height:  50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    @media (max-width: 1000px) {
-        margin: 20rem 0;
-    }
+  @media (max-width: 1000px) {
+    margin: 20rem 0;
+  }
 
+  @media (max-width: 700px) {
+    margin: 10rem 0;
+  }
 `;
 
 export const Content = styled.div`
-    width: 100%;
-    height: 100%;
-    max-width: 1300px;
+  width: 100%;
+  height: 100%;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+
+  .conection-card {
     display: flex;
+    width: 55%;
+    height: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3rem;
+  }
+
+  .conection-text {
+    width: 38%;
+
+    div {
+      background-color: ${green};
+      width: 3rem;
+      height: 0.2rem;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      color: ${gray};
+      margin-top: 2.7rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: ${darkGray};
+      margin-top: 1rem;
+    }
+
+    
+    @media (max-width: 1200px){
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    flex-direction: column-reverse;
+    height: 80vh;
+    padding: 0;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    align-items: flex-start;
 
     .conection-card {
-        display: flex;
-        width: 55%;
-        height: 100%;
-        justify-content: space-between;
-        align-items: center;
+      width: 80%;
+      height: 35rem;
+      text-align: left;
     }
-
 
     .conection-text {
-        width: 38%;
-
-        div {
-            background-color: #04d361;
-            width: 3rem;
-            height: .2rem;
-        }
-
-
-        h1 {
-            font-size: 3.5rem;
-            color: #e1e1e6;
-            margin-top: 2.7rem;
-        }
-
-        p {
-            font-size: 1.2rem;
-            color: #a8a8b3;
-            margin-top: 1rem;
-        }
+      width: 80%;
+      margin-top: 3rem;
     }
+  }
 
-    @media (max-width: 1000px) {
-        flex-direction: column-reverse;
-        height: 80vh;
-        padding: 0;
-        margin-top: 5rem;
-        margin-left: 5rem;
-        align-items: flex-start;
-
-        .conection-card {
-            width: 80%;
-            height: 35rem;
-            text-align: left;
-        }
-
-        .conection-text {
-            width: 80%;
-            margin-top: 3rem;
-        }
+  @media (max-width: 900px) {
+    .conection-card {
+      width: 90%;
     }
+  }
 
-    @media (max-width: 900px) {
-        .conection-card {
-            width: 90%;
-        }
+  @media (max-width: 700px) {
+    .conection-card {
+      height: 25rem;
     }
-
-    @media (max-width: 700px) {
-        .conection-card {
-            height: 25rem;
-        }
-    }
+  }
 `;
 
 export const Card = styled.div`
@@ -99,52 +108,60 @@ export const Card = styled.div`
   padding: 2rem;
 
   .img {
-      width: 40%;
-      height: 28%;
-      border-radius: 100%;
-      background-color: #8257e6;
-      padding: 1rem;
-      border: 1px solid #5921dd;
+    width: 40%;
+    height: 28%;
+    border-radius: 100%;
+    background-color: ${purple};
+    padding: 1rem;
+    border: 1px solid ${purpleDark};
   }
 
   h2 {
-      color: #e1e1e6;
-      margin-top: 1rem;
+    color: ${gray};
+    margin-top: 1rem;
   }
 
   p {
-      color: #a8a8b3;
-      font-size: 1.1rem;
-      margin-top: .5rem;
+    color: ${darkGray};
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
   }
 
   .icons {
-      width: 70%;
-      height: 20%;
-      display: flex;
-      padding: 1rem;
-      justify-content: space-between;
-      align-items: center;
+    width: 70%;
+    height: 20%;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
   }
 
   button {
-      text-align: center;
-      color: #fff;
-      padding: .8rem 2rem;
-      font-size: 1rem;
-      font-weight: 600;
-      border-radius: 0.3rem;
+    text-align: center;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.3rem;
   }
 
   @media (max-width: 1200px) {
-      .icons{
-          width: 80%;
-      }
+    .icons {
+      width: 80%;
+    }
+
+    button {
+      padding: 0.4rem 1rem;
+    }
   }
 
   @media (max-width: 600px) {
-      .icons{
-          width: 100%;
-      }
+    .icons {
+      width: 100%;
+    }
+
+    button {
+      padding: 0.4rem 1rem;
+    }
   }
 `;

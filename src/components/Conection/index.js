@@ -3,6 +3,8 @@ import React from 'react';
 import { Container, Content, Card } from "./style";
 import { FaReact, FaGitSquare, FaJsSquare, FaPython } from "react-icons/fa";
 
+import { purple, pink } from '../Colors/colors'
+
 export default function Conection() {
   return (
     <>
@@ -16,10 +18,10 @@ export default function Conection() {
               <p>Função e local</p>
 
               <div className="icons">
-                <FaPython size={"1.5rem"} color={"#8257a2"} />
-                <FaJsSquare size={"1.5rem"} color={"#8257a2"} />
-                <FaGitSquare size={"1.5rem"} color={"#8257a2"} />
-                <FaReact size={"1.5rem"} color={"#8257a2"} />
+                <FaPython size={"1.5rem"} color={pink} />
+                <FaJsSquare size={"1.5rem"} color={pink} />
+                <FaGitSquare size={"1.5rem"} color={pink} />
+                <FaReact size={"1.5rem"} color={pink} />
               </div>
               <button>conectar</button>
             </Card>
@@ -31,10 +33,10 @@ export default function Conection() {
               <p>Função e local</p>
 
               <div className="icons">
-                <FaPython size={"1.5rem"} color={"#9e2a2b"} />
-                <FaJsSquare size={"1.5rem"} color={"#9e2a2b"} />
-                <FaGitSquare size={"1.5rem"} color={"#9e2a2b"} />
-                <FaReact size={"1.5rem"} color={"#9e2a2b"} />
+                <FaPython size={"1.5rem"} color={purple} />
+                <FaJsSquare size={"1.5rem"} color={purple} />
+                <FaGitSquare size={"1.5rem"} color={purple} />
+                <FaReact size={"1.5rem"} color={purple} />
               </div>
               <button>conectar</button>
             </Card>
