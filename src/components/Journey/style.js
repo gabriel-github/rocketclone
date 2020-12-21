@@ -27,7 +27,7 @@ export const Content = styled.div`
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      padding: 0 4rem;
+      padding: 0 5rem;
 
       h1 { 
           text-align: left;
@@ -49,7 +49,7 @@ export const Content = styled.div`
       width: 90%;
       height: 60%;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       flex-wrap: wrap;
   }
 `
