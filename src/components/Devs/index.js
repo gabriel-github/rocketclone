@@ -1,9 +1,5 @@
 import React from "react";
-
-import { FaReact, FaGitSquare, FaJsSquare, FaPython } from "react-icons/fa";
 import { Container, Content } from "./style";
-
-import { pink } from "../Colors/colors";
 
 export default function Reward() {
   return (

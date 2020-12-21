@@ -12,6 +12,8 @@ import Conection from './components/Conection'
 import Reward from './components/Reward'
 import Devs from './components/Devs'
 
+import Alert from './components/Alert'
+
 function App() {
   return (
     <>
@@ -23,6 +25,7 @@ function App() {
       <Conection/>
       <Reward/>
       <Devs/>
+      <Alert/>
     </>
   );
 }
