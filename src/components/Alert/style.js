@@ -3,7 +3,6 @@ import { gray } from "../Colors/colors";
 
 export const Container = styled.div`
   width: 100%;
-  height: 20vh;
   display: flex;
   height: 50vh;
   justify-content: center;

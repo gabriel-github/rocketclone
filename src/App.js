@@ -13,6 +13,7 @@ import Reward from './components/Reward'
 import Devs from './components/Devs'
 
 import Alert from './components/Alert'
+import Journey from './components/Journey'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Reward/>
       <Devs/>
       <Alert/>
+      <Journey/>
     </>
   );
 }
