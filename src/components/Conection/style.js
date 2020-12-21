@@ -65,7 +65,7 @@ export const Content = styled.div`
 
   @media (max-width: 1000px) {
     flex-direction: column-reverse;
-    height: 80vh;
+    height: 100%;
     padding: 0;
     margin-top: 5rem;
     margin-left: 5rem;
@@ -91,7 +91,7 @@ export const Content = styled.div`
 
   @media (max-width: 700px) {
     .conection-card {
-      height: 25rem;
+      height: 20rem;
     }
   }
 `;
@@ -105,7 +105,7 @@ export const Card = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 
   .img {
     width: 40%;
@@ -128,10 +128,9 @@ export const Card = styled.div`
   }
 
   .icons {
-    width: 70%;
+    width: 50%;
     height: 20%;
     display: flex;
-    padding: 1rem;
     justify-content: space-between;
     align-items: center;
   }
@@ -146,18 +145,24 @@ export const Card = styled.div`
   }
 
   @media (max-width: 1200px) {
-    .icons {
-      width: 80%;
-    }
-
     button {
       padding: 0.4rem 1rem;
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
     .icons {
-      width: 100%;
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .img {
+      width: 30%;
+      height: 25%;
+    }
+    .icons {
+      width: 70%;
     }
 
     button {

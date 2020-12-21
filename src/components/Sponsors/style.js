@@ -3,13 +3,14 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100%;
   color: #e1e1e6;
-  margin: 6rem 0;
+  height: 50vh;
   display: flex;
   justify-content: center;
 `;
 
 export const Content = styled.div`
     width: 100%;
+    height: 100%;
     max-width: 1300px;
     display: flex;
     flex-direction: column;
@@ -21,7 +22,6 @@ export const Content = styled.div`
         font-size: 2.5rem;
         text-align: center;
         height: 3rem;
-        margin-top: 5rem;
         transition: all .6s ease-in;
     }
 

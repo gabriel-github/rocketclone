@@ -2,42 +2,31 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 30vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 13rem 0;
+  margin: 4rem 0;
   transition: all .3s ease-in;
 
-  @media (max-width: 768px) {
-    margin: 7rem 0;
-  }
-
-  @media (max-width: 900px) {
-    margin: 7rem 0;
-  }
-
-  @media (max-width: 620px) {
-    margin: 4rem 0;
-  }
 `;
 
 export const Content = styled.div`
   position: relative;
   width: 90%;
   max-width: 1300px;
-  height: 60vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all .3s ease-in;
 
   @media (max-width: 900px) {
-    height: 43vh;
+    height: 80%;
   }
 
   @media (max-width: 620px) {
-    height: 30vh;
+    height: 45%;
   }
 `;
 

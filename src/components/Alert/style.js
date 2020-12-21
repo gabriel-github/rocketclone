@@ -55,6 +55,11 @@ export const Content = styled.div`
   }
 
   @media (max-width: 800px) {
+    .icon {
+      width: 4rem;
+      height: 4rem;
+    }
+
       h1 {
           font-size: 3rem;
       }

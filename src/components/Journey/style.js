@@ -41,15 +41,21 @@ export const Content = styled.div`
           color: ${darkGray};
           text-align: left;
       }
+
+      @media (max-width: 1000px) {
+        h1 {
+          font-size: 2.6rem;
+        }
+      }
   }
 
   .journey-cards {
       margin-top: 4rem;
       display: flex;
-      width: 90%;
+      width: 95%;
       height: 60%;
       align-items: center;
-      justify-content: flex-start;
+      justify-content: center;
       flex-wrap: wrap;
   }
 `

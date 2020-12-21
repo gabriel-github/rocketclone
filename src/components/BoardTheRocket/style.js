@@ -85,4 +85,8 @@ export const Button = styled.button`
     background-color: ${pink};
     transform: translateY(-3px);
     }
+
+    @media (max-width: 1000px) {
+      padding: 15px 20px;
+    }
 `;
