@@ -15,6 +15,8 @@ import Devs from './components/Devs'
 import Alert from './components/Alert'
 import Journey from './components/Journey'
 
+import Footer from './components/Footer'
+
 function App() {
   return (
     <>
@@ -28,6 +30,7 @@ function App() {
       <Devs/>
       <Alert/>
       <Journey/>
+      <Footer/>
     </>
   );
 }

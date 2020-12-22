@@ -10,6 +10,10 @@ export const Card = styled.div`
     border-radius: .3rem;
     background-color: ${grayBrown};
     margin: 1rem;
+
+    @media (max-width: 650px) {
+        width: 78%;
+    }
 `;
 
 export const Content = styled.div`
@@ -31,10 +35,11 @@ export const Content = styled.div`
         top: 0;
 
         .level { 
-            padding: 5px;
+            padding: 3px;
             background-color: ${darkGray};
             color: #fff;
             border-radius: .2rem;
+            font-size: 1rem;
         }
 
         .level-number {
@@ -51,7 +56,7 @@ export const Content = styled.div`
     }
 
     h2 {
-        margin-top: 1.2rem;
+        margin-top: 1rem;
         font-size: 2.2rem;
         color: ${green};
         padding-left: 1rem;
