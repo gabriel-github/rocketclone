@@ -29,29 +29,40 @@ export default function index() {
             <div className="contact">
                 <a href="/"> 
                 <IoIosRocket size={'2rem'} color={'#8257e6'}/>
-                rocketseat
+                <p id="logo">rocketseat</p>
                 </a>
 
                 <div>
-                    <FaFacebookSquare size={'1.5rem'} color={'#8257e6'}/>
-                    <FaInstagram size={'1.5rem'} color={'#8257e6'}/>
-                    <FaTwitter size={'1.5rem'} color={'#8257e6'}/>
-                    <FaYoutube size={'1.5rem'} color={'#8257e6'}/>
+                    <div id="facebook">
+                    <FaFacebookSquare size={'1.5rem'} color={'#8257e6'} />
+                    </div>
 
-                    <a href="/">Central de ajuda</a>
+                    <div  id="instagram">
+                    <FaInstagram size={'1.5rem'} color={'#8257e6'}/>
+                    </div>
+
+                    <div id="twitter">
+                    <FaTwitter size={'1.5rem'} color={'#8257e6'}/>
+                    </div>
+
+                    <div  id="youtube">
+                    <FaYoutube size={'1.5rem'} color={'#8257e6'}/>
+                    </div>
                 </div>
             </div>
 
-            <div className="use-terms-of-use">
+            <div className="terms-of-use">
                 <div>
+                    <div className="terms-content">
                     <a href="/">Direitos autorais</a>
                     <a href="/">Termos de uso</a>
                     <a href="/">Politicas de privacidade</a>
+                    </div>
 
                     <div className="boost-yourself">
                         <p>Boost yourself</p>
 
-                        <a href="/">
+                        <a href="#topo" id="arrow-up">
                         <MdKeyboardArrowUp size={'1.5rem'} color={'#8257e6'}/>
                         </a>
                     </div>

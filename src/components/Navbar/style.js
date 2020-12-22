@@ -22,7 +22,6 @@ export const Content = styled.div`
 
   a {
     text-decoration: none;
-    font-family: 'Arial', sans-serif;
     color: #fff;
     display: flex;
     justify-content: center;

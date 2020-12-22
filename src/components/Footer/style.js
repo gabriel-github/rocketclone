@@ -4,7 +4,7 @@ import { gray, pink, green, grayBrown } from "../Colors/colors";
 export const Container = styled.div`
   width: 100%;
   display: flex;
-  height: 70vh;
+  height: 85vh;
   justify-content: center;
   align-items: center;
   margin-top: 10rem;
@@ -18,6 +18,10 @@ export const Container = styled.div`
     width: 100%;
     height: 60%;
     background-color: #000;
+  }
+
+  @media (max-width: 1200px) {
+    margin-top: 20rem;
   }
 
   @media (max-width: 650px) {
@@ -116,6 +120,131 @@ export const Content = styled.div`
     }
   }
 
+  .footer-infos {
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
 
-  
+    .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: bold;
+
+        #logo {
+          margin-left: 0.5rem;
+        }
+      }
+
+      div {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        #facebook,
+        #instagram,
+        #twitter,
+        #youtube {
+          background-color: ${grayBrown};
+          margin-left: 0.5rem;
+          padding: 0.5rem;
+          border-radius: 0.2rem;
+        }
+      }
+
+      @media (max-width: 800px) {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+
+        div {
+          width: 30%;
+          margin-top: 0;
+        }
+
+        #facebook,
+        #instagram,
+        #twitter,
+        #youtube {
+          margin-top: 0.5rem;
+        }
+      }
+    }
+
+    .terms-of-use {
+      padding-right: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      div a {
+        margin-left: 0.5rem;
+        text-decoration: none;
+        color: ${gray};
+        font-size: 1rem;
+      }
+
+      .boost-yourself {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 2rem;
+
+        p {
+          color: ${green};
+          font-size: 1.1rem;
+          margin-right: 0.8rem;
+        }
+
+        #arrow-up {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: ${grayBrown};
+          text-align: center;
+          padding: 0.5rem;
+          border-radius: 0.2rem;
+        }
+      }
+    }
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .terms-content {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        a {
+          margin-top: 0.7rem;
+        }
+      }
+
+      .terms-of-use {
+        width: 97%;
+
+        .boost-yourself {
+          justify-content: space-between;
+        }
+      }
+    }
+  }
 `;

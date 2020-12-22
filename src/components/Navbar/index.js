@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <Container>
       <Content>
-        <a href="/">
+        <a href="/" name="topo">
           <IoIosRocket size={'2rem'} color={'#8257e6'}/>
           <h1>rocketclone</h1>
         </a>
